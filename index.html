@@ -12,13 +12,28 @@
   
   <div id="container">
     <form action="#" id="my-form">
-      <label for="username">Username</label>
-      <input type="text" name="username" id="username">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email">
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password">
-      <button type="submit">Send</button>
+      
+      <h2>Step 1</h2>
+      <div class="step hidden">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+      </div>
+      
+      <h2>Step 2</h2>
+      <div class="step hidden">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      
+      <h2>Step 3</h2>
+      <div class="step hidden">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">  
+      </div>
+
+      <button type="submit" class="hidden">Send</button>
+      <input type="button" class="hidden" value="Next">
+      <input type="button" class="hidden" value="Back">
     </form>  
   </div>
   

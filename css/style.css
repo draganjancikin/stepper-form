@@ -11,8 +11,13 @@ h1 {
   text-align: center;
 }
 
+button, 
 input {
   width: 100%;
+}
+
+.hidden {
+  display: none;
 }
 
 #container {
