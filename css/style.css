@@ -16,6 +16,26 @@ input {
   width: 100%;
 }
 
+#next-btn,
+#submit-btn {
+  background-color: green;
+  color: #fff;
+  border: none;
+}
+
+#back-btn {
+  border: 1px solid #aaa;
+}
+
+#next-btn,
+#back-btn,
+#submit-btn {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
 .hidden {
   display: none;
 }

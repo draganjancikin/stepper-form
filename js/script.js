@@ -56,3 +56,5 @@ function nextStep(arg) {
   showStep(previousStep, currentStep);
 
 }
+
+// TODO: prevent submit with hit Enter key
