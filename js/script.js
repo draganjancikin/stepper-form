@@ -13,11 +13,11 @@ let stepDivs = document.querySelectorAll(".step");
 showStep(previousStep, currentStep);
 
 
-function showStep(prev, current) {
+function showStep(previous, current) {
   
   // hide previus step
-  if(prev || prev === 0){
-    stepDivs[prev].classList.add("hidden");
+  if(previous || previous === 0){
+    stepDivs[previous].classList.add("hidden");
   }
   
   // show current step
@@ -33,7 +33,7 @@ function showStep(prev, current) {
   }
 
   // show/hide Back button
-  if(prev === null ) {
+  if(previous === null || currentStep === 0 ) {
     backBtn.classList.add("hidden");
   } else {
     backBtn.classList.remove("hidden");
