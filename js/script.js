@@ -1,15 +1,44 @@
-// index of first step
+// indexes of previus and current step
+let previousStep = null;
 let currentStep = 0;
 
-// show curent step
-showStep(currentStep);
+// buttons
+let nextBtn = document.querySelector("#next-btn");
+let submitBtn = document.querySelector("#submit-btn");
 
-function showStep(step) {
-  console.log("Show step!");
+let stepDivs = document.querySelectorAll(".step");
+
+// show curent step
+showStep(previousStep, currentStep);
+
+
+function showStep(prev, next) {
+  
+  // hide previus step
+  if(prev || prev === 0){
+    stepDivs[prev].classList.add("hidden");
+  }
+  
   // show current step
-  document.querySelectorAll(".step")[step].classList.remove("hidden");
+  stepDivs[next].classList.remove("hidden");
 
   // show/hide Next button
-  document.querySelector("#next-btn").classList.remove("hidden");
+  if(next < stepDivs.length - 1) {
+    nextBtn.classList.remove("hidden");
+  } else {
+    nextBtn.classList.add("hidden");
+    submitBtn.classList.remove("hidden");
+  }
+  
+}
 
+
+function nextStep(arg) {
+  
+  // update indexes of previus and current step
+  previousStep = currentStep;
+  currentStep += arg;
+
+  // show curent step
+  showStep(previousStep, currentStep);
 }
