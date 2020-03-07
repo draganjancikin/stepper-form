@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stepper Form</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>Colt Steele Challenge #1: Stepper Form</h1>
+  
+  <div id="container">
+    <form action="#" id="my-form">
+      
+      <h2>Step 1</h2>
+      <div class="step hidden">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+      </div>
+      
+      <h2>Step 2</h2>
+      <div class="step hidden">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      
+      <h2>Step 3</h2>
+      <div class="step hidden">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">  
+      </div>
+
+      <div id="nav">
+        <button type="submit" class="nav-btn hidden" id="submit-btn">Send</button>
+        <input type="button" class="nav-btn hidden" id="next-btn" value="Next" onclick="nextStep(1)">
+        <input type="button" class="nav-btn hidden" id="back-btn" value="Back" onclick="nextStep(-1)">
+      </div>
+      
+    </form>  
+  </div>
+  
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+button, 
+input {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+#next-btn,
+#submit-btn {
+  background-color: green;
+  color: #fff;
+  border: none;
+}
+
+#next-btn:hover {
+  background-color: #005500;
+}
+
+#back-btn {
+  border: 1px solid #aaa;
+}
+
+#next-btn,
+#back-btn,
+#submit-btn {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#container {
+  width: 360px;
+  margin: 0 auto;
+  padding: 25px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(170,170,170,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(170,170,170,1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(170,170,170,1);
+}
