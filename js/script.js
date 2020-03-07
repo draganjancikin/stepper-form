@@ -33,7 +33,7 @@ function showStep(previous, current) {
   }
 
   // show/hide Back button
-  if(previous === null || currentStep === 0 ) {
+  if(previous === null || current === 0 ) {
     backBtn.classList.add("hidden");
   } else {
     backBtn.classList.remove("hidden");
@@ -43,9 +43,8 @@ function showStep(previous, current) {
 
 
 function nextStep(arg) {
-  
+
   // update indexes of previus and current step
-  
   if(arg === -1 && currentStep === 0 ) {
     return;
   }
@@ -56,5 +55,3 @@ function nextStep(arg) {
   showStep(previousStep, currentStep);
 
 }
-
-// TODO: prevent submit with hit Enter key
